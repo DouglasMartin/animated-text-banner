@@ -1,8 +1,16 @@
 (function ($) {
     "use strict";
-	$.initialiseTickerBanner = function () {
-		var ticker = $('.ticker-banner');
-		var tickerArray = ticker.data('ticker-array');
+	
+	/**
+	* Options
+	* targetId - Select a specific class/id for the banner container. If null, will default to .ticker-banner by 
+	* bannerDuration - Set how long each banner will display before displaying the next. If null, will default to 7000
+	**/
+    $.initialiseTickerBanner = function (targetId, bannerDuration) {
+        var ticker = targetId ? $(targetId) : $('.ticker-banner');
+        var tickerArray = ticker.data('ticker-array');
+        bannerDuration = bannerDuration || 7000;
+		
 		if (tickerArray) {
 			var n = 1, tickerLength = tickerArray.length;
 			window.setInterval(function(){
@@ -15,7 +23,7 @@
 				visibleBanner.fadeOut(500);
 				hiddenBanner.fadeIn(500).css("display","block");
 				n++;
-			}, 7000);
+			}, bannerDuration);
 		}
 	};
-});
+})(jQuery);

@@ -1,4 +1,4 @@
-# animated-text-banner
+# ticker-text-banner
 
 ### About
 
@@ -7,9 +7,9 @@ Ticker Text Banner is a simple js function that will create an animated banner w
 ### Example HTML
 
     <div class="ticker-banner" 
-        data-ticker-array="[{"text":"Message 1", "url":"url-1" }, 
+        data-ticker-array='[{"text":"Message 1", "url":"url-1" }, 
                             {"text":"Message 2", "url":"url-2" },  
-                            {"text":"Message 3", "url":"url-3" } }]">
+                            {"text":"Message 3", "url":"url-3" }]'>
         <a class="first-ticker" href="url-1" style="display: block;">
             <span class="ticker-text">Message 1</span>
         </a>
@@ -18,4 +18,6 @@ Ticker Text Banner is a simple js function that will create an animated banner w
 	    </a>
     </div>
 
+### JSFiddle Demo
 
+https://jsfiddle.net/DouglasMartin/7amje4e9/7/

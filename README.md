@@ -20,4 +20,4 @@ Ticker Text Banner is a simple js function that will create an animated banner w
 
 ### JSFiddle Demo
 
-https://jsfiddle.net/DouglasMartin/7amje4e9/7/
+https://jsfiddle.net/DouglasMartin/7amje4e9/
